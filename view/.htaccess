@@ -1,0 +1,13 @@
+#DirectoryIndex  index.html start.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^([a-z,0-9,A-Z,_-]+)$ $1.html
+</IfModule>
+
+ErrorDocument 400  http:/estudos/view/erro/400.html
+ErrorDocument 401  http:/estudos/view/erro/401.html
+ErrorDocument 404  http:/estudos/view/erro/404.html
+ErrorDocument 403  http:/estudos/view/erro/403.html
+ErrorDocument 500  http:/estudos/view/erro/500.html
+Options All -Indexes

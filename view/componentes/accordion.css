@@ -1,0 +1,42 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+
+}
+.panelHome .link {
+    width: 100%;
+    display: block;
+    margin: 0px;
+}
+.panelHome .link a{
+    width: 100%;
+    color: #757575;
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 30px;
+}
+.panelHome .link:hover {
+    background-color: #e0e0e0;
+}

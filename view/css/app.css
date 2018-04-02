@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html,body{
+  margin: 0;
+  padding:  0;
+ height: 100%;
+}
+main{
+	height: auto ;
+}
+/*Alterando pseudo-classes do framework*/
+.mdl-cell{
+	/*background: #ccc;*/
+	background: #ffffff;
+}
+.colInfo1{
+	height: 600px !important;
+}
+.colInfo2{
+	height: 200px !important;
+}
+.colInfo3{
+	height: 600px !important;
+}
+.colInfo4{
+	height: 200px !important;
+}
+div.pull-center{
+	text-align: center;
+
+}
+.mdl-cell--12-col-phone #box {
+	position: absolute;
+	margin-top: 30px !important;
+}
+div.pull-left{
+	text-align: left;
+}
+
+.rowParallax1 article{
+	width: 600px !important;
+	vertical-align: middle !important;
+	position: relative;
+	left: 27%;
+}
+.carousel-inner, .carousel-control, .item{
+	background: transparent !important;
+	background-color: transparent !important;
+}
+.rowParallax1 img[data-targe]{
+	display: table-cell !important;
+	display: inline-block;
+	position: relative;	
+	margin-top: 2% !important;
+	height: 570px !important;
+}
+.rowParallax1 img{
+	display: table-cell !important;
+	display: inline-block;
+	background: none;	
+	margin-top: 20% !important;
+	border-radius: 15%;
+}
+.rowParallax3 section{
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 60px;
+	margin-left: 65px;
+	background-color: rgba(42, 42, 44, 0.9);
+	 box-shadow: 0px 0px 1em #666;
+    -webkit-box-shadow: 0px 0px 1em #666;
+    -moz-box-shadow: 0px 0px 1em #666;
+}
+.rowParallax3 section:nth-child(1){
+	height: 450px !important;
+}
+.rowParallax3 section:nth-child(2){
+	margin-top: 25px !important;
+	height: 530px !important;
+}
+.rowParallax3 section:nth-child(3){
+	height: 500px !important;
+}
+.rowParallax4 img{
+	margin-top: 25px;
+	width: 11em;
+	height: 10em;
+}
+.rowParallax4 section{
+	width: 100%;
+}
+.rowParallax4 .mdl-cell--2-col-tablet{
+	padding: 15px;
+}
+/*Fim das alterações pseudo-classes do framework*/
+.rowParallax1{
+    background-image: url("../../imgs/parallax/img1.jpg");
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin-top: -10;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    display: flex;
+
+}
+.rowParallax2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.rowParallax3{
+    background-image: url("../../imgs/parallax/img2.jpg");
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-shadow:0px 0px 7px #000;
+    font-style: blur;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.rowParallax4{
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

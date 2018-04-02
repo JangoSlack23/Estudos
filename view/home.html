@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de Estudos">
+    <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,PHP,desenvolvimento,estudos,analise e desenvolvimento de sistema">
+    <meta name="author" content="William Teixeira Fagundes">
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+    <link rel="stylesheet" href="css/reset200802.css">
+    <link rel="stylesheet" href="framework/material.min.css">
+    <link rel="stylesheet" href="fonts/icon.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <link rel="stylesheet" href="componentes/accordion.css">
+    <script  defer src="framework/material.min.js"></script>
+    <script  defer src="componentes/accordion.js"></script>
+    <link rel="stylesheet" href="css/correcaoBugs.css">
+  <!--complemento -->
+    <link type="text/css" rel="stylesheet" href="framework/bootstrap-3.3.7-dist/css/bootstrap.css"  media="screen,projection"/>
+	 <script defer src="framework/jquery-3.1.1.js" ></script>
+	 <script defer type="text/javascript" src="framework/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+ <!-- complemento -->
+
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout  mdl-layout--fixed-header ">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Estudos</span>
+				<div class="mdl-layout-spacer"></div>
+				      <!-- Navigation -->
+			    <nav class="mdl-navigation esconde-celular">
+			        <a class="mdl-navigation__link pg" href="home" accesskey="h" tabindex="1" ><u>H</u>ome</a>
+			        <a class="mdl-navigation__link" href="#artigos" id="menuCat1" accesskey="a" tabindex="2" >
+			        	<u>A</u>rtigos 
+			        	<i class="material-icons-home mdl-icon-toggle__label material-icons " >keyboard_arrow_down</i>
+			        </a>
+			         <ul for="menuCat1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+			            <li class="mdl-menu__item" data-val="art1">Artigo 1</li>
+			            <li class="mdl-menu__item" data-val="art2">Artigo 2</li>
+			            <li class="mdl-menu__item" data-val="art3">Artigo 3</li>
+			        </ul>
+			       
+			        <a class="mdl-navigation__link pg" href="control"  accesskey="c" tabindex="3" ><u>C</u>ontrol</a>
+			        <a class="mdl-navigation__link pg" href="suporte"  accesskey="s" tabindex="4" ><u>S</u>uporte</a>
+			        <a class="mdl-navigation__link pg" href="login" accesskey="l" tabindex="5"><u>L</u>ogin</a>
+			     
+			    </nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer mostra-celular "><!--gaveta onde vai ficar os links-->
+		    <span class="mdl-layout-title">Links</span>
+		    	<nav class="mdl-navigation ">
+			        <a class="mdl-navigation__link pg" href="home" accesskey="h" tabindex="1"><u>H</u>ome</a>
+			    	<a class="mdl-navigation__link accordion accordionHome" href="#artigo" accesskey="a" tabindex="2"><u>A</u>rtigos 
+					<i class="material-icons-home mdl-icon-toggle__label material-icons keyboard_arrow" >keyboard_arrow_down</i>
+			    	</a>
+					<div class="panel ">
+					  <ul class="panelHome">
+			            <li class="link"><a href="#">Artigo 1</a></li>
+			            <li class="link"><a href="#">Artigo 2</a></li>
+			            <li class="link"><a href="#">Artigo 3</a></li>
+			         </ul>
+					</div>
+			        <a class="mdl-navigation__link pg" href="control" accesskey="c" tabindex="3"><u>C</u>ontrol</a>
+			        <a class="mdl-navigation__link pg" href="suporte" accesskey="s" tabindex="4"><u>S</u>uporte</a>
+			        <a class="mdl-navigation__link pg" href="login" accesskey="l" tabindex="5"><u>L</u>ogin</a>
+			    </nav>
+	  	</div>
+	  	<div class="mdl-layout__content"><!-- se torna interessante envolver a main em uma div para ter footer independente da main -->
+	  	<main>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--12-col colInfo1 rowParallax1">
+	<article >
+       <section>
+            <div id="carouselMain" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselMain" data-slide-to="1"></li>
+            <li data-target="#carouselMain" data-slide-to="2"></li>
+            <li data-target="#carouselMain" data-slide-to="3" ></li>
+            <li data-target="#carouselMain" data-slide-to="4"></li>
+            <li data-target="#carouselMain" data-slide-to="5"></li>
+            <li data-target="#carouselMain" data-slide-to="6"></li>
+            <li data-target="#carouselMain" data-slide-to="7"></li>
+            <li data-target="#carouselMain" data-slide-to="8"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                  <div class="item active">
+                  <img src="../imgs/carrossel/lord00.jpg" alt="Lord" data-targe>
+                  </div>
+
+                  <div class="item">
+                  <img src="../imgs/carrossel/lord01.png" alt="Lord" data-targe>
+                  </div>
+                  
+                  <div class="item">
+                  <img src="../imgs/carrossel/1000times.png" alt="1000 Times">
+                  </div>
+
+                  <div class="item">
+                  <img src="../imgs/carrossel/amused00.jpg" alt="Amused">
+                  </div>
+                  
+                  <div class="item">
+                  <img src="../imgs/carrossel/amused01.jpg" alt="Amused">
+                  </div>
+
+                  <div class="item">
+                  <img src="../imgs/carrossel/amused02.jpg" alt="Amused">
+                  </div>
+                  
+                  <div class="item">
+                  <img src="../imgs/carrossel/runboyrun00.jpg" alt="Runboy Run">
+                  </div>
+
+                  <div class="item">
+                  <img src="../imgs/carrossel/runboyrun01.jpg" alt="Runboy Run">
+                  </div>
+
+                  <div class="item">
+                  <img src="../imgs/carrossel/runboyrun02.jpg" alt="Runboy Run">
+                  </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#carouselMain" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carouselMain" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+
+       </section>
+    </article>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet colInfo2 rowParallax2">
+					<section >
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone" >
+							<img src="../imgs/lorem.jpg"/>
+						</div>
+						<div class="mdl-cell mdl-cell--3-offset-desktop mdl-cell--3-col-desktop mdl-cell--2-offset-tablet mdl-cell--3-col-tablet mdl-cell--12-col-phone " id="box">
+			        	 		<h4><b>"while( !( succeed = try() ) );"</b></h4>
+			        	 		</br>&emsp;&emsp;&emsp;&emsp;&emsp;
+			               		<i>Programmer Quotes</i>
+			            </div>
+			         </div>
+			        </section>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col    colInfo3 rowParallax3">
+					<div class="mdl-grid">
+						<section class="mdl-cell   mdl-cell--3-col-desktop"> 
+			               <h4>O que é Lorem Ipsum </h4>&#013;
+			               Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+			            </section>
+			             <section class="mdl-cell  mdl-cell--4-col-desktop">
+			              <h4>De onde ele vem?</h4>
+			               Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+
+			              O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+			            </section>
+			            <section class="mdl-cell  mdl-cell--3-col-desktop">
+			               <h4>Porque nós o usamos?</h4> 
+			              É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+			            </section>
+			         </div>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col  mdl-cell--hide-phone  colInfo4 rowParallax4">
+					<div class="mdl-grid">
+						<section class="mdl-cell mdl-cell--1-offset-desktop mdl-cell--3-col-desktop  mdl-cell--2-col-tablet">
+							<img src="../imgs/1200px-HTML5.svg.png"/>
+						</section>
+
+						<section class="mdl-cell mdl-cell--3-col-desktop  mdl-cell--2-col-tablet">
+							<img src="../imgs/css3.svg.png"/>
+						</section>
+						
+						<section class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet">
+							<img src="../imgs/es6.jpg"/>
+						</section>
+
+						<section class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet">
+							<img src="../imgs/1200px-Nodejs.svg.png"/>
+						</section>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		<footer class="mdl-mega-footer" style="bottom: 0; width: 100%; float: bottom;">
+				<!-- mega-footer posso ter 3 sessões -->
+				<div class="mdl-mega-footer--top-section">
+				<div class="mdl-mega-footer--drop-down-section">
+				<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>	
+						<h4 class="mdl-mega-footer--heading">A página Estudos</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Contato</a></li>
+							<li><a href="#">Artigos</a></li>
+							<li><a href="#">Controler</a></li>
+							<li><a href="#">Suporte</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Recursos</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Wiki</a></li>
+							<li><a href="#">Mails</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Canais no Youtube</a></li>
+							<li><a href="#">Links úteis</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Notícias</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Últimas Notícias</a></li>
+							<li><a href="#">Historico</a></li>
+	
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Linguagem</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Este site está disponível em outros idiomas</a></li>
+							<li><a href="#">Mudar idioma</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!--
+				<div class="mdl-mega-footer middle-section">
+					
+				</div>
+				-->
+				<div class="mdl-mega-footer--bottom-section">
+					<span> Copyright © a partir 2018 </span> 
+					<span><b>O site Estudos</b></span>
+					<ul class="mdl-mega-footer--link-list">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+		
+		</footer>
+	  	</div>
+	
+
+</div>
+ <!-- scripts custom não use defer-->
+  <script  type="text/javascript"  src="../controller/router.js" ></script>
+ <!-- cripts custom -->
+
+ <script type="text/javascript">
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de Estudos">
+    <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,PHP,desenvolvimento,estudos,analise e desenvolvimento de sistema">
+    <meta name="author" content="William Teixeira Fagundes">
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+    <link rel="stylesheet" href="css/reset200802.css">
+    <link rel="stylesheet" href="framework/material.min.css">
+    <link rel="stylesheet" href="fonts/icon.css">
+    <link rel="stylesheet" href="css/correcaoBugs.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script defer src="framework/material.min.js"></script>
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout  mdl-layout--fixed-header mdl-layout--fixed-drawer">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Estudos</span>
+				<div class="mdl-layout-spacer"></div>
+				      <!-- Navigation -->
+			    <nav class="mdl-navigation esconde-celular">
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			    </nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer"><!--gaveta onde vai ficar os links-->
+		    <span class="mdl-layout-title">Tópicos</span>
+		    	<nav class="mdl-navigation mostra-celular">
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			    </nav>
+			    <nav class="mdl-navigation">
+			      <a class="mdl-navigation__link" href="">Engenharia de Usabilidade</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			    </nav>
+	  	</div>
+	  	<div class="mdl-layout__content"><!-- se torna interessante envolver a main em uma div para ter footer independente da main -->
+	  	<main>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--4-col">colun1</div>
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">colun2</div>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--hide-desktop">colun3</div>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--4-col">colun1</div>
+				<div class="mdl-cell mdl-cell--6-col">colun2</div>
+				<div class="mdl-cell mdl-cell--2-col">colun3</div>
+			</div>
+		</main>
+		<footer class="mdl-mega-footer">
+				<!-- mega-footer posso ter 3 sessões -->
+				<div class="mdl-mega-footer--top-section">
+				<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+					<div class="mdl-mega-footer--drop-down-section">
+						<h4 class="mdl-mega-footer--heading">Cursos</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Curso 1</a></li>
+							<li><a href="#">Curso 1</a></li>
+							<li><a href="#">Curso 1</a></li>
+							<li><a href="#">Curso 1</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Empresa</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Empresa</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
+						<h4 class="mdl-mega-footer--heading">Empresa</h4>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+							<li><a href="#">Empresa 1</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!--
+				<div class="mdl-mega-footer middle-section">
+					
+				</div>
+				-->
+				<div class="mdl-mega-footer--bottom-section">
+					<span class="mdl-logo">Estudos</span>
+					<ul class="mdl-mega-footer--link-list">
+						<li><a href="#">Canais no Youtube</a></li>
+						<li><a href="#">Links úteis</a></li>
+					</ul>
+				</div>
+		
+		</footer>
+	  	</div>
+	
+
+</div>
+ <!-- scripts custom não use defer-->
+  <script  type="text/javascript"  src="../controller/router.js" ></script>
+ <!-- cripts custo
+</body>
+</html>
